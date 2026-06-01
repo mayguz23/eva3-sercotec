@@ -1,16 +1,104 @@
-# React + Vite
+# EVA 3 Desarrollo Frontend - Centro de Negocios SERCOTEC Santiago
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Descripción
 
-Currently, two official plugins are available:
+Landing Page desarrollada para el Centro de Negocios Santiago de SERCOTEC utilizando React como framework frontend y WordPress como CMS para la administración de contenido.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+La aplicación consume datos desde la API REST de WordPress y muestra dinámicamente información relacionada con servicios, testimonios y preguntas frecuentes.
 
-## React Compiler
+## Tecnologías Utilizadas
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* React
+* Vite
+* JavaScript
+* WordPress
+* API REST de WordPress
+* Bootstrap
+* Git
+* GitHub
 
-## Expanding the ESLint configuration
+## Funcionalidades Implementadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Landing Page
+
+* Navbar
+* Hero principal
+* Sección Nosotros
+* Sección Servicios
+* Sección Testimonios
+* Sección Preguntas Frecuentes
+* Formulario de Contacto
+* Footer
+
+### Componentes React
+
+* Navbar.jsx
+* Hero.jsx
+* About.jsx
+* ServiceCard.jsx
+* ContactForm.jsx
+* Footer.jsx
+
+### Consumo de API
+
+La aplicación consume información desde la API REST de WordPress:
+
+http://localhost/wordpress/wp-json/wp/v2/posts
+
+### Funcionalidad de Contacto
+
+Cada servicio posee un botón "Contáctanos" que:
+
+* Desplaza automáticamente al formulario.
+* Completa automáticamente el servicio seleccionado.
+
+### Accesibilidad y Usabilidad
+
+* Navegación simple e intuitiva.
+* Formularios con validaciones HTML.
+* Diseño organizado por secciones.
+
+## Instalación
+
+1. Clonar el repositorio:
+
+git clone URL_DEL_REPOSITORIO
+
+2. Instalar dependencias:
+
+npm install
+
+3. Ejecutar el proyecto:
+
+npm run dev
+
+4. Abrir:
+
+http://localhost:5173
+
+## Estructura del Proyecto
+
+src/
+
+components/
+
+* Navbar.jsx
+* Hero.jsx
+* About.jsx
+* ServiceCard.jsx
+* ContactForm.jsx
+* Footer.jsx
+
+App.jsx
+
+## CMS
+
+WordPress fue utilizado como sistema de gestión de contenidos (CMS), permitiendo administrar la información mostrada en la Landing Page mediante la API REST.
+
+## Control de Versiones
+
+El desarrollo fue gestionado utilizando Git y GitHub.
+
+## Autor
+
+Mayco Guzmán
