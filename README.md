@@ -102,3 +102,5 @@ El desarrollo fue gestionado utilizando Git y GitHub.
 ## Autor
 
 Mayco Guzmán
+
+https://github.com/mayguz23/eva3-sercotec.git
