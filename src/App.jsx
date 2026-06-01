@@ -8,7 +8,6 @@ import ContactForm from "./components/ContactForm";
 
 function App() {
   const [posts, setPosts] = useState([]);
-  console.log(posts);
 
   useEffect(() => {
     fetch("http://localhost/wordpress/wp-json/wp/v2/posts")
