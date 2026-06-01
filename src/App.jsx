@@ -5,6 +5,7 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Footer from "./components/Footer";
 import ContactForm from "./components/ContactForm";
+import Testimonial from "./components/Testimonial";
 
 function App() {
   const [posts, setPosts] = useState([]);
@@ -47,21 +48,11 @@ return (
       ))}
     </div>
 
-    <div style={{ padding: "20px" }}>
-      <h2>Testimonios</h2>
+<div style={{ padding: "20px" }}>
+  <h2>Testimonios</h2>
 
-      {testimonios.map((post) => (
-        <div key={post.id}>
-          <h3>{post.title.rendered}</h3>
-
-          <div
-            dangerouslySetInnerHTML={{
-              __html: post.excerpt.rendered,
-            }}
-          />
-        </div>
-      ))}
-    </div>
+  <Testimonial testimonios={testimonios} />
+</div>
 
 <div style={{ padding: "20px" }}>
   <h2>Preguntas Frecuentes</h2>
